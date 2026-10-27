@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ukázka formulářových prvků</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validators.js" defer></script>
+  </head>
+  <body class="forms-page">
+    <header class="site-header">
+      <a class="portfolio-brand" href="https://smolkaj4kub.github.io/#domu" aria-label="Jakub – úvodní stránka">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>jakub<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="top-nav" aria-label="Hlavní navigace">
+        <a href="index.html">Vyhledávání Google</a>
+      </nav>
+    </header>
+
+    <main class="forms-main">
+      <h1>Ukázka formulářových prvků</h1>
+      <p>Přehled různých typů polí a ovládacích prvků HTML formuláře.</p>
+
+      <form class="demo-form" action="#" method="get">
+        <fieldset>
+          <legend>Textové a číselné vstupy</legend>
+          <div class="demo-grid">
+            <label for="demo-text">Text<input id="demo-text" name="text" type="text" placeholder="Zadejte text"></label>
+            <label for="demo-search">Hledání<input id="demo-search" name="search" type="search" placeholder="Hledat"></label>
+            <label for="demo-email">E-mail<input id="demo-email" name="email" type="email" placeholder="jmeno@example.cz"></label>
+            <label for="demo-password">Heslo<input id="demo-password" name="password" type="password"></label>
+            <label for="demo-tel">Telefon<input id="demo-tel" name="telephone" type="tel"></label>
+            <label for="demo-url">Webová adresa<input id="demo-url" name="url" type="url" placeholder="https://"></label>
+            <label for="demo-number">Číslo<input id="demo-number" name="number" type="number" min="0" max="100"></label>
+            <label for="demo-range">Rozsah<input id="demo-range" name="range" type="range" min="0" max="10"></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datum a soubory</legend>
+          <div class="demo-grid">
+            <label for="demo-date">Datum<input id="demo-date" name="date" type="date"></label>
+            <label for="demo-time">Čas<input id="demo-time" name="time" type="time"></label>
+            <label for="demo-datetime">Datum a čas<input id="demo-datetime" name="datetime" type="datetime-local"></label>
+            <label for="demo-month">Měsíc<input id="demo-month" name="month" type="month"></label>
+            <label for="demo-week">Týden<input id="demo-week" name="week" type="week"></label>
+            <label for="demo-color">Barva<input id="demo-color" name="color" type="color" value="#4285f4"></label>
+            <label for="demo-file">Soubor<input id="demo-file" name="file" type="file"></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Výběr a text</legend>
+          <div class="demo-grid">
+            <label for="demo-select">Výběr možnosti
+              <select id="demo-select" name="selection">
+                <option value="">Vyberte možnost</option>
+                <option value="one">Možnost jedna</option>
+                <option value="two">Možnost dva</option>
+                <option value="three">Možnost tři</option>
+              </select>
+            </label>
+            <label for="demo-multiple">Vícenásobný výběr
+              <select id="demo-multiple" name="multiple" multiple size="3">
+                <option value="alpha">Alfa</option>
+                <option value="beta">Beta</option>
+                <option value="gamma">Gama</option>
+              </select>
+            </label>
+            <label for="demo-textarea">Textová oblast<textarea id="demo-textarea" name="message" rows="4" placeholder="Napište zprávu"></textarea></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Zaškrtávací pole a přepínače</legend>
+          <div class="choice-list">
+            <label><input type="checkbox" name="newsletter" value="yes"> Odebírat novinky</label>
+            <label><input type="checkbox" name="terms" value="accepted"> Souhlasím s podmínkami</label>
+          </div>
+          <div class="choice-list">
+            <label><input type="radio" name="preference" value="first"> První volba</label>
+            <label><input type="radio" name="preference" value="second"> Druhá volba</label>
+            <label><input type="radio" name="preference" value="third"> Třetí volba</label>
+          </div>
+        </fieldset>
+
+        <div class="demo-actions">
+          <button class="advanced-button" type="submit">Odeslat</button>
+          <button class="subtle-button" type="reset">Vymazat formulář</button>
+          <button class="subtle-button" type="button">Obyčejné tlačítko</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-citation">Citace: zadání a předloha – Jakub, konverzace k projektu (22. 10. 2026). <a href="chat.md">Přepis chatu</a></span>
+      <a class="validator-link" data-validator="html" href="https://validator.w3.org/nu/">Validovat HTML</a>
+      <a class="validator-link" data-validator="css" href="https://jigsaw.w3.org/css-validator/">Validovat CSS</a>
+    </footer>
+  </body>
+</html>

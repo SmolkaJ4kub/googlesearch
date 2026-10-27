@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rozšířené vyhledávání Google</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validators.js" defer></script>
+  </head>
+  <body class="advanced-page">
+    <header class="site-header">
+      <a class="portfolio-brand" href="https://smolkaj4kub.github.io/#domu" aria-label="Jakub – úvodní stránka">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>jakub<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="top-nav" aria-label="Hlavní navigace">
+        <a href="index.html">Vyhledávání Google</a>
+      </nav>
+    </header>
+
+    <main class="advanced-main">
+      <h1>Rozšířené vyhledávání</h1>
+      <p class="advanced-intro">Najít stránky s…</p>
+      <form action="https://www.google.com/search" method="get">
+        <div class="advanced-row">
+          <label for="all-words">všechna tato slova:</label>
+          <input id="all-words" type="text" name="as_q">
+        </div>
+        <div class="advanced-row">
+          <label for="exact-phrase">přesným tímto slovem nebo frází:</label>
+          <input id="exact-phrase" type="text" name="as_epq">
+        </div>
+        <div class="advanced-row">
+          <label for="any-words">některým z těchto slov:</label>
+          <input id="any-words" type="text" name="as_oq">
+        </div>
+        <div class="advanced-row">
+          <label for="none-words">žádné z těchto slov:</label>
+          <input id="none-words" type="text" name="as_eq">
+        </div>
+        <div class="advanced-submit">
+          <button class="advanced-button" type="submit">Rozšířené vyhledávání</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-citation">Citace: zadání a předloha – Jakub, konverzace k projektu (22. 10. 2026). <a href="chat.md">Přepis chatu</a></span>
+      <a class="validator-link" data-validator="html" href="https://validator.w3.org/nu/">Validovat HTML</a>
+      <a class="validator-link" data-validator="css" href="https://jigsaw.w3.org/css-validator/">Validovat CSS</a>
+    </footer>
+  </body>
+</html>
